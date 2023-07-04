@@ -1,4 +1,5 @@
 FROM balenalib/genericx86-64-ext-ubuntu:focal
+# Ubuntu 20
 
 WORKDIR /usr/src
 
@@ -11,7 +12,7 @@ RUN \
     apt install -y software-properties-common && \
     add-apt-repository ppa:graphics-drivers/ppa && \
     apt update && \
-    apt install -y nvidia-driver-470
+    apt install -y nvidia-driver-530
 
 
 # Install PyTorch

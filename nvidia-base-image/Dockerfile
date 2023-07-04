@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:21.11-py3
+FROM nvcr.io/nvidia/pytorch:23.03-py3
 
 # Starting with an Nvidia base image above, see: https://catalog.ngc.nvidia.com/
 
@@ -10,7 +10,7 @@ RUN \
     apt install -y software-properties-common && \
     add-apt-repository ppa:graphics-drivers/ppa && \
     apt update && \
-    apt install -y nvidia-driver-470
+    apt install -y nvidia-driver-530
     
 WORKDIR /workspace
    
